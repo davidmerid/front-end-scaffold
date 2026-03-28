@@ -1,0 +1,33 @@
+{
+  "name": "frontend-scaffold",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:next": "turbo run dev --filter=next-app",
+    "dev:expo": "turbo run dev --filter=expo-app",
+    "build": "turbo run build",
+    "build:next": "turbo run build --filter=next-app",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "clean": "turbo run clean"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "protobufjs",
+      "@firebase/util"
+    ]
+  },
+  "devDependencies": {
+    "turbo": "^2.8.20"
+  }
+}
