@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@scaffold/app": ["../../packages/app"],
+      "@scaffold/app/*": ["../../packages/app/*"],
+      "@scaffold/ui": ["../../packages/ui/src"],
+      "@scaffold/ui/*": ["../../packages/ui/src/*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["node_modules", "ios", "android"]
+}

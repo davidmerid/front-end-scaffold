@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Frontend Scaffold",
+    "slug": "frontend-scaffold",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "frontend-scaffold",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.scaffold.app",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "$color.primary"
+      },
+      "package": "com.scaffold.app",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ]
+  }
+}
